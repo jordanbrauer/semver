@@ -1,0 +1,30 @@
+{
+    "name": "jordanbrauer/semver",
+    "description": "Programmatic handling of semver numbers.",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jordanbrauer",
+            "email": "18744334+jordanbrauer@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1"
+    },
+    "autoload": {
+        "psr-4": {
+          "Semver\\": "src/"
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.4",
+        "symfony/var-dumper": "^3.4"
+    },
+    "scripts": {
+        "test": "clear && php vendor/bin/phpunit tests --colors=always -v"
+    }
+}
