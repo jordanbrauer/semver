@@ -4,7 +4,7 @@ declare(strict_types = 1);
 
 namespace Semver\Tests;
 
-use function Semver\semver;
+use function Semver\Semver;
 use PHPUnit\Framework\TestCase;
 use Semver\Semver;
 
@@ -72,8 +72,7 @@ final class SemverTest extends TestCase
         
         $this->assertEquals($parts['major'], $semver->getMajor());
         $this->assertEquals($parts['minor'], $semver->getMinor());
-        $this->assertEquals($parts['patch'], $semver->getPatch());
-        
+        $this->assertEquals($parts['patch'], $semver->getPatch());   
     }
 
     public function testBumpingMajorVersion(): void

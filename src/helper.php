@@ -6,11 +6,11 @@ namespace Semver {
          * Instantiate a new instance of Semver.
          *
          * @param string $version A valid semver string.
-         * @return \Semver\Semver
+         * @return Semver
          */
-        function semver(string $version = null): \Semver\Semver
+        function semver(string $version = null): Semver
         {
-            return new \Semver\Semver($version);
+            return new Semver($version);
         }
     }
 }
